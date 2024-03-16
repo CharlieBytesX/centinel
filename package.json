@@ -1,0 +1,49 @@
+{
+  "name": "centinel",
+  "version": "1.0.12",
+  "description": "State manager for react using observer pattern and custom hook",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/TheSolracBoy/centinel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSolracBoy/centinel.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "files": [
+    "/dist"
+  ],
+  "keywords": [
+    "centinel",
+    "react",
+    "global",
+    "state",
+    "manager",
+    "management",
+    "store"
+  ],
+  "author": "TheSolracBoy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8",
+    "react": ">=16.8"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  }
+}
