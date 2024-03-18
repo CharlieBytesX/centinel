@@ -1,5 +1,7 @@
 # Centinel
 State manager for react using observer pattern and a custom hook.
+## NPM
+https://www.npmjs.com/package/centinel
 ## Features
 * Less than 1Kb minified
 * Simple
