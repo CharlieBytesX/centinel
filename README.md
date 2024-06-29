@@ -1,14 +1,17 @@
 # Centinel
+
 State manager for react using observer pattern and a custom hook.
+
 ## NPM
+
 https://www.npmjs.com/package/centinel
+
 ## Features
-* Less than 1Kb minified
-* Simple
-* Fast Dev Experience
-* Dev full controll
 
-
+- Less than 1Kb minified
+- Simple
+- Fast Dev Experience
+- Dev full controll
 
 ## Installation
 
@@ -17,11 +20,15 @@ Install centinel with npm, bun...
 ```bash
   npm install centinel
 ```
-    
+
 ## Usage/Examples
+
 First define your variables inside a ts file
+
 ### Define your state in any way you want
+
 You can use composable objects
+
 ```typescript
 import { Observable } from "centinel";
 
@@ -32,9 +39,10 @@ export const newExam = {
   selectedTeacherIDS: new Observable<string[]>([]),
   questions: new Observable<Question[]>([]),
 };
-
 ```
+
 Or with just simple variables Or Both Or ANYTHING YOU WANT
+
 ```typescript
 import { Observable } from "centinel";
 
@@ -58,30 +66,30 @@ export default function NewTestInteractive() {
   );
 }
 ```
+
 ### Update the state calling the set method
+
 You can update from another TS File or from any component
 
 **From a ts file with your logic:**
 
 ```typescript
-import {
-  newExam,
-} from "./new_exams";
-
+import { newExam } from "./new_exams";
 
 export function addNewQuestion() {
-  const newQuestions = newExam.questions.getCopy()
-  newQuestions.push(emptyQuestion())
-  newExam.questions.set(newQuestions)
-  isAddingQuestionObs.set(false)
+  const newQuestions = newExam.questions.getCopy();
+  newQuestions.push(emptyQuestion());
+  newExam.questions.set(newQuestions);
+  isAddingQuestionObs.set(false);
 }
 
 export function handleStartAddingNewAnswer() {
-  isAddingAnswerToQuestionObs.set(true)
+  isAddingAnswerToQuestionObs.set(true);
 }
 ```
 
 **From a react component:**
+
 ```typescript
 import {
   newExam,
@@ -93,7 +101,7 @@ import {
     required={true}
     placeholder="Add Name"/>
 ```
+
 ## Authors
 
-- [@TheSolracBoy](https://www.github.com/TheSolracBoy)
-
+- [@CharlieBytes](https://www.github.com/CharlieBytesX)

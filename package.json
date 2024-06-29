@@ -9,10 +9,10 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/TheSolracBoy/centinel",
+  "homepage": "https://github.com/CharlieBytesX/centinel",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheSolracBoy/centinel.git"
+    "url": "git+https://github.com/CharlieBytesX/centinel.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,7 +30,7 @@
     "management",
     "store"
   ],
-  "author": "TheSolracBoy",
+  "author": "CharlieBytesX",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.66",
